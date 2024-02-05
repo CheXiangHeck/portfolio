@@ -36,6 +36,7 @@
     background-attachment: fixed;
 }
 
+
 @media (width <= 720px) {
     .TextSize{
         font-size: 30px;

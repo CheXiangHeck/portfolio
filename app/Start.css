@@ -1,0 +1,35 @@
+.textchange::before {
+    width: 100%;
+    height: 100%;
+    content: 'PORTFOLIO';
+    color:cyan;
+    position: absolute;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: textanimation 4s ease-in-out infinite;
+}
+
+@keyframes textanimation {
+    0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+}
+
+.Loading {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: textanimation2 2s ease-in-out infinite;
+}
+
+@keyframes textanimation2 {
+    0%{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}

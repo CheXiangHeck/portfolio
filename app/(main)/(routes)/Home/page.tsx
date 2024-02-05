@@ -1,10 +1,14 @@
 "use client";
-import { NavigationTop } from "@/components/(navigation)/navigation-top/navigation-top";
-import { ArrowDown, AwardIcon, CodeIcon, FolderArchive } from "lucide-react";
+import { BookOutlined } from "@ant-design/icons";
+import {
+  ArrowDown,
+  AwardIcon,
+  BookIcon,
+  CodeIcon,
+  FolderArchive,
+} from "lucide-react";
 import "./Home.css";
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -16,11 +20,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Steps, Divider } from "antd";
 
 export default function Page() {
-  const router = useRouter();
-  const [changepage, setChangePage] = useState("/Home");
-
   return (
     <>
       <div className="h-full w-full p-5">
@@ -36,7 +38,7 @@ export default function Page() {
               className=" dark:text-cyan-200 border-2 border-cyan-200 hover:bg-transparent font-Titan p-3 rounded-2xl text-base z-20 relative hoveranimation before:bg-cyan-300"
             >
               <Link
-                href="/About"
+                href="/about"
                 className="flex justify-center items-center gap-2"
               >
                 <CodeIcon />
@@ -46,7 +48,7 @@ export default function Page() {
           </div>
           <ArrowDown className="absolute bottom-0 m-4 text-cyan-300 floatanimation" />
         </div>
-        <div className="h-[600px] flex justify-center items-center gap-9 mt-20 ml-10 FlexChange">
+        <div className="h-[600px] flex justify-center items-center gap-9 mt-10 mb-10 FlexChange">
           <Tabs defaultValue="languages">
             <TabsList className="w-full flex gap-3 items-center">
               <TabsTrigger value="languages" className="p-2 flex gap-2">
@@ -139,6 +141,39 @@ export default function Page() {
               <FolderArchive /> Project
             </Link>
           </Button>
+        </div>
+        <div className="mb-10 w-full mt-10 font-WorkBench text-3xl text-center">
+          <h1>Future Planning for 2024</h1>
+          <Steps
+            className="font-Oswald dark:bg-white text-white mt-3 p-5 rounded-3xl"
+            current={0}
+            percent={30}
+            labelPlacement="vertical"
+            responsive={true}
+            status="process"
+            items={[
+              {
+                title: "Learning Popular Languages",
+                description:
+                  "Learning Python, Nextjs, Java, Wordpress, and Javascript.",
+              },
+              {
+                title: "Try to plan well for an project.",
+                description:
+                  "Try to focus on how to plan for a project well before starting to do the project.",
+              },
+              {
+                title: "Learn AI",
+                description:
+                  "I have been wanting to get in touch with AI, after I learn the basics well on how to code then I will proceed with AI Learning.",
+              },
+              {
+                title: "Start my first big project",
+                description:
+                  "I never get to do a big project but this time I will try since I am intern in APU so I will not get in touch with big projects.",
+              },
+            ]}
+          />
         </div>
       </div>
     </>

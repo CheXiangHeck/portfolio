@@ -1,0 +1,41 @@
+.page::-webkit-scrollbar {
+    display: none;
+}
+
+.page {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+@media (width <= 720px) {
+    .changeflexbox {
+        flex-direction: column;
+        justify-content: start;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: both mandatory;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .changeflexbox::-webkit-scrollbar{
+        display: none;
+    }
+
+    .changeCard {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 100%;
+        width: 90%;
+        scroll-snap-align: center;
+    }
+
+    .contentFuture {
+        margin: 0;
+        overflow-y: scroll;
+    }
+}

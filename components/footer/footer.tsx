@@ -19,7 +19,7 @@ export function Footer() {
             updating employers on my status.
           </div>
         </div>
-        <div className="flex justify-center items-center h-[200px] font-WorkBench text-6xl animate-pulse">
+        <div className="flex justify-center items-center h-[200px] font-Sixty text-4xl animate-pulse">
           My Portfolio
         </div>
         <div className="mt-7 font-Titan text-xl w-1/4 dark:text-white text-zinc-400 changewidth">

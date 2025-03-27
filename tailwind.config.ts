@@ -54,10 +54,12 @@ const config = {
         },
       },
       fontFamily: {
-        WorkBench: ['Workbench', 'sans-serif'],
         Oswald: ['Oswald', 'sans-serif'],
-        Titan: ['Titan One', 'sans serif'],
+        Titan: ['Titan One', 'sans-serif'],
         Honk: ['Honk', 'system-ui'],
+        Kanit: ['Kanit', 'sans-serif'],
+        Day: ['Single Day', 'cursive'],
+        Sixty: ["Sixtyfour", 'sans-serif']
       },
       borderRadius: {
         lg: "var(--radius)",

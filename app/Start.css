@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     content: 'PORTFOLIO';
-    color:cyan;
+    color: #00FC82;
     position: absolute;
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     animation: textanimation 4s ease-in-out infinite;
@@ -32,4 +32,37 @@
     100% {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+}
+
+:root{
+    --middle: hsl(176, 74%, 50%);
+    --two-hundred: hsl(176,82%, 73%);
+    --hundred: hsl(176,95%,91%);
+    --six-hundred: hsl(176,79%,37%);
+    --seven-hundred: hsl(176,85%,25%);
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.disappear {
+    animation: disappear 1s forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.appear {
+    animation: appear 1s forwards;
 }

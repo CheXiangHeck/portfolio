@@ -14,8 +14,6 @@ import {
   InfoIcon,
   LucideIcon,
   FileIcon,
-  TargetIcon,
-  FolderIcon,
   ActivityIcon,
   GithubIcon,
   LinkedinIcon,
@@ -37,19 +35,19 @@ const components: { icon: LucideIcon; title: string; href: string }[] = [
   {
     icon: User2Icon,
     title: "Resume",
-    href: "/about/resume",
+    href: "/Resume",
   },
   {
     icon: FileIcon,
     title: "Project",
-    href: "/about/project",
+    href: "/Project",
   },
 ];
 
 export const NavigationTop = () => (
-  <div className=" flex items-center justify-between h-[60px] backdrop-blur-3xl border-b-2 dark:border-zinc-700 border-cyan-300 px-6 gap-3 w-full z-10 dark:text-white text-cyan-300">
+  <div className=" flex items-center justify-between h-[60px] backdrop-blur-3xl border-b-2 dark:border-zinc-700 text-[#00FC82] border-[#00FC82] px-6 gap-3 w-full z-10 dark:text-white">
     <div className="font-Titan dark:text-white ">
-      <Link href="/Home">Anonymous Portfolio</Link>
+      <Link href="/anotherhome">Wei Xiang Portfolio</Link>
     </div>
     <TooltipProvider>
       <NavigationMenu className="justify-start">
@@ -65,7 +63,7 @@ export const NavigationTop = () => (
                   <NavigationMenuLink asChild>
                     <a
                       className=" h-full justify-center flex flex-col rounded-md w-3/4 hover:bg-indigo-500 border-2 border-indigo-500"
-                      href="/about"
+                      href="/About"
                     >
                       <div className="text-lg font-medium dark:text-white flex font-WorkBench ">
                         <InfoIcon className="mx-2" />

@@ -1,0 +1,95 @@
+.icon {
+    font-size: 20px;
+}
+
+.page {
+    
+}
+
+@media (width <= 720px) {
+    .changeflexbox {
+        flex-direction: column;
+        justify-content: start;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: both mandatory;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .changeflexbox::-webkit-scrollbar{
+        display: none;
+    }
+
+    .changeCard {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 100%;
+        width: 90%;
+        scroll-snap-align: center;
+    }
+
+    .contentFuture {
+        margin: 0;
+        overflow-y: scroll;
+    }
+
+    .flexing {
+        flex-direction: column;
+    }
+}
+
+.home-polygon{
+    opacity: 0;
+    animation: startanimation 1s ease-in-out forwards;
+}
+
+.home-shown {
+    animation: changepageanimation 1s ease-in-out forwards;
+}
+
+.colorfont {
+    color: #00FC82;
+}
+
+.whole-page {
+    scroll-timeline: --page_progress block;
+}
+
+.cursor-change {
+    cursor: url(../image/scroll-top-bottom.png), default;
+}
+
+.scroll-watcher {
+    z-index: 10;
+    scale: 0 1;
+    transform-origin: left;
+    animation: auto scrollwatcher linear forwards;
+    animation-timeline: --page_progress;
+}
+
+@keyframes scrollwatcher {
+    to { scale: 1 1; }
+}
+
+@keyframes startanimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        display: none;
+    }
+}
+
+@keyframes changepageanimation {
+    0% {
+        transform: translateY(100%);
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        display: flex;
+    }
+}

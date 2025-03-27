@@ -1,5 +1,5 @@
 .background-Home {
-    background-image: url(Coding.jpeg);
+    background-image: url(../../image/Coding.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,7 +29,7 @@
 
 .polygonv2 {
     clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%);
-    background-image: url(coding-freak.gif);
+    background-image: url(../../image/coding-freak.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

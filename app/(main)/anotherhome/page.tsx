@@ -3,10 +3,9 @@
 import "./anotherhome.css";
 import { project } from "@/components/projectInfo/project";
 import { useState, useEffect } from "react";
-import { checklist } from "@/components/checklist/checklist";
 import { useRouter } from "next/navigation";
 
-export default function page() {
+export default function Page() {
   const [page, setPage] = useState("");
   const [projects, setProjects] = useState("");
   const router = useRouter();
@@ -39,7 +38,7 @@ export default function page() {
       <div className="h-full w-full overflow-y-scroll scrollbarhidden snap-both snap-mandatory relative">
         <div className="h-full w-full flex flex-col items-center justify-center snap-center">
           <div className="w-full h-full flex justify-center items-center flex-col cursor-default fadein-animation">
-            <h1 className="font-Oswald text-6xl">Hi, I'm Wei Xiang</h1>
+            <h1 className="font-Oswald text-6xl">Hi, I am Wei Xiang</h1>
             <p className="font-Kanit text-3xl">I am a Software Engineer</p>
           </div>
           <div className="absolute font-Sixty text-xs m-6 cursor-default left-0 bottom-0 flex flex-col justify-center items-center gap-3">

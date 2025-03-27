@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 
-export default function projectpage() {
+export default function Page() {
   const projectData = project();
 
   const [dictionary, setDictionary] = useState<Record<string, any>>({});
@@ -162,7 +162,7 @@ export default function projectpage() {
                       )
                     ) : (
                       <div className="flex justify-center items-center font-Oswald text-5xl w-full h-full">
-                        <p className="text-center">No Project's Status</p>
+                        <p className="text-center">No Project Status</p>
                       </div>
                     )}
                   </div>

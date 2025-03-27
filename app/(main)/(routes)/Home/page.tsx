@@ -1,9 +1,7 @@
 "use client";
-import { BookOutlined } from "@ant-design/icons";
 import {
   ArrowDown,
   AwardIcon,
-  BookIcon,
   CodeIcon,
   FolderArchive,
 } from "lucide-react";
@@ -15,12 +13,11 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Steps, Divider } from "antd";
+import { Steps } from "antd";
 
 export default function Page() {
   return (

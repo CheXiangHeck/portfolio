@@ -2,26 +2,13 @@
 
 import { BookOpenTextIcon, StarsIcon, TargetIcon } from "lucide-react";
 import "./About.css";
-import { useState, useEffect } from "react";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ConfigProvider, Timeline } from "antd";
 import {
@@ -30,7 +17,6 @@ import {
   PythonOutlined,
   RobotOutlined,
 } from "@ant-design/icons";
-import { SignIn } from "@clerk/nextjs";
 
 export default function About() {
   return (

@@ -2,10 +2,6 @@
     font-size: 20px;
 }
 
-.page {
-    
-}
-
 @media (width <= 720px) {
     .changeflexbox {
         flex-direction: column;
